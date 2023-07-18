@@ -1,0 +1,26 @@
+.header{
+    @include flexBox(row,center,space-around,2rem);
+    padding:1rem;
+    box-shadow: $box-shadow;
+
+    article{
+        @include flexBox;
+        @include styledText(0.91rem,550,2px);
+
+
+
+        a{
+            text-transform: uppercase;
+            padding: 1rem;
+            transition: all 0.3s;
+            &:hover{
+                color:$hover-color;
+                font-size: 1rem;
+            }
+        }
+
+        button{
+            @include myButton
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.profile{
+  
+    @include defaultStyle;
+    @include flexBox(row,flex-start,center);
+    padding-top: 5rem;
+
+    .profile-title{
+        border: 2px solid black;
+        @include flexBox(column,flex-start,center);
+        padding: 2rem;
+
+        .pbody{
+            @include flexBox(row,flex-start,center);
+        }
+    }
+}

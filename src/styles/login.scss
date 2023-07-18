@@ -1,0 +1,78 @@
+.login{
+    @include flexBox(row,flex-start,center);
+    @include defaultStyle;
+    padding: 2rem;
+    section{
+        form{
+            @include flexBox(column);
+            background-color: $color2;
+            padding: 2rem;
+            @include inputs;
+
+            div{
+                position: relative;
+
+                svg{
+                    position: absolute;
+                    right: 5%;
+                    top: 25%;
+                }
+            }
+
+            input[type=submit] {
+                @include myButton;
+             }
+
+             a{
+                text-decoration: underline;
+                transition: 0.2s  all linear;
+                &:hover{
+                    font-weight: 600;
+                }
+             }
+        }
+    }
+}
+
+.container{
+    @include defaultStyle;
+    .taskform{
+       margin: 0 5rem;
+       padding: 2rem;
+       
+        section{
+            form{
+                @include flexBox(column);
+                background-color: $color2;
+                @include container(900px,unset,3rem 0);
+                @include inputs;
+                padding: 2rem;
+    
+                div{
+                    position: relative;
+    
+                    svg{
+                        position: absolute;
+                        right: 5%;
+                        top: 25%;
+                    }
+                }
+    
+                input[type=submit] {
+                    @include myButton;
+                 }
+    
+                 a{
+                    text-decoration: underline;
+                    transition: 0.2s  all linear;
+                    &:hover{
+                        font-weight: 600;
+                    }
+                 }
+            }
+        }
+    }
+
+
+
+}
